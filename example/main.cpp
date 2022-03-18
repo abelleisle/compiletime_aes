@@ -3,7 +3,8 @@
 
 int main()
 {
-    constexpr compiletime_aes mhm("this should work? luasdf;ljas;lk aji98s7df 79s7df9 87s9d87f 987987s fsdf 9798s7df kjhsd f9s7d f97sd jsdk fjhsdf97s9df kshdfk hsd3 23 423673434 23 4343439f 7skdjn sd9f 7s9d7 fskjdhf dfj;lk sajl;fjal;sjfd;ljas;ldjf ;lasjdf ;lajsd ;fljasd;lfj a;lsdj f;laksdj ");
+    constexpr aes_key<128> key("0123456789abcdef");
+    constexpr compiletime_aes mhm("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elit ullamcorper dignissim cras tincidunt. Faucibus a pellentesque sit amet porttitor eget dolor. Odio tempor orci dapibus ultrices in iaculis. Platea dictumst quisque sagittis purus sit amet. Urna molestie at elementum eu facilisis sed odio morbi. Nisl tincidunt eget nullam non nisi est sit amet. Parturient montes nascetur ridiculus mus. Tristique senectus et netus et malesuada fames ac turpis. Nisl tincidunt eget nullam non nisi est. Enim facilisis gravida neque convallis a. Non curabitur gravida arcu ac tortor dignissim convallis aenean et. Blandit massa enim nec dui nunc mattis enim ut tellus. Semper auctor neque vitae tempus quam. Commodo sed egestas egestas fringilla phasellus. Tortor aliquam nulla facilisi cras fermentum odio eu. Leo vel orci porta non pulvinar neque. Mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus. Viverra nibh cras pulvinar mattis nunc.", key);
     mhm.print();
 
     return 0;
